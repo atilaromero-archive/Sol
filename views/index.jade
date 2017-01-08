@@ -1,39 +1,91 @@
 extends layout
 
+mixin img(src)
+  img.figure-img.img-fluid(src=attributes.src)
+
 block content
   .container
-    :marked
-      Este site foi criado com o propósito de informar de uma forma clara e
-      objetiva sobre transtornos mentais e emocionais e seus
-      tratamentos mais utilizados, visando orientar quem procura informações,
-      tanto sobre problemas de fundo emocional quanto sobre onde buscar tratamento.
+    .col-md-6
+      +img(src="img/sala1-2.jpg")
 
-      A psicologia tem um vasto campo de abrangência e hoje ela está cada vez
-      mais presente na vida dos indivíduos, tanto para tratamentos individuais
-      como familiares.
+    .col-md-6
+      :marked
+        > "A maior revolução de nossos tempos é a descoberta de que ao mudar as
+        > atitudes internas de suas mentes, os seres humanos podem mudar os aspectos
+        > externos de suas vidas."
+        > <cite> William James </cite>
 
-      Estou à disposição para dúvidas, sugestões ou maiores esclarecimentos.
-      Estes podem ser feito por e-mail. Ficarei satisfeita em poder ajudar com
-      outras informações.
+      :marked
+        > "O psicólogo deve ser para o outro, o que o outro necessita para chegar
+        > a ser ele mesmo."
+        > <cite> Eduardo Sá </cite>
+
+      :marked
+        > "Conheça todas as teorias, domine todas as técnicas, mas ao tocar uma
+        > alma humana, seja, apenas outra alma humana."
+        > <cite> Carl Jung </cite>
+
+  .container.center.bg1
+    .row
+      .col-md-4.col-md-offset-4
+        :marked
+          ### Psicoterapia
+
+          A psicologia tem um vasto campo de abrangência e hoje ela está cada vez
+          mais presente na vida dos indivíduos, tanto para tratamentos individuais
+          como familiares.
+
+    .row
+      .col-md-4
+        img.figure-img.icon(src="img/man-silhouette.png")
+        h4 Individual
+      .col-md-4
+        img.figure-img.icon(src="img/couple.png")
+        h4 Casal
+      .col-md-4
+        img.figure-img.icon(src="img/family-group-of-father-and-mother-with-two-babies-and-a-dog.png")
+        h4 Família
+
+  .container.center.bg2
+    .row
+      .col-md-4.col-md-offset-4
+        :marked
+          ### Abordagens
+    .row
+      .col-md-3
+        :marked
+          #### Terapia Cognitivo Comportamental
+      .col-md-3
+        :marked
+          #### Terapia Sistêmica
+      .col-md-3
+        :marked
+          #### Logoterapia
+      .col-md-3
+        :marked
+          #### Psicologia positiva
+
+  .container.center.bg3
+    .row
+      .col-md-4.col-md-offset-4
+        :marked
+          ### Avaliação psicológica
+    .row
+      .col-md-4
+      .col-md-4
+      .col-md-4
 
   .container
-    :marked
-      > "A maior revolução de nossos tempos é a descoberta de que ao mudar as
-      > atitudes internas de suas mentes, os seres humanos podem mudar os aspectos
-      > externos de suas vidas."
-      > <cite> William James </cite>
+    .row
+      .col-md-4.col-md-offset-4.center
+        :marked
+          ### Horários de atendimento
 
-  .container
-    :marked
-      > "O psicólogo deve ser para o outro, o que o outro necessita para chegar
-      > a ser ele mesmo."
-      > <cite> Eduardo Sá </cite>
+          2ª a 6ª das 8:00 às 19:00
 
-  .container
-    :marked
-      > "Conheça todas as teorias, domine todas as técnicas, mas ao tocar uma
-      > alma humana, seja, apenas outra alma humana."
-      > <cite> Carl Jung </cite>
+          sábados das 8:00 às 12:00
+
+          as consultas devem ser marcadas previamente via telefone
 
 block myjs
   script jQuery("#apresentacao").addClass("active")

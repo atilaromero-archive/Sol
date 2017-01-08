@@ -34,17 +34,13 @@ html
         #navbar.navbar-collapse.collapse
           ul.nav.navbar-nav
             li#apresentacao
-              a(href="index.html") Apresentação
-            li#transtornosmentais
-              a(href="transtornosmentais.html") Transtornos mentais
+              a(href="index.html") Consultório
             li#psicoterapia
               a(href="psicoterapia.html") Psicoterapia
+            li#transtornosmentais
+              a(href="transtornosmentais.html") Transtornos mentais
             li#avaliacaopsicologica
               a(href="avaliacaopsicologica.html") Avaliação Psicológica
-            li#contato
-              a(href="contato.html") Contato
-            li#convenios
-              a(href="convenios.html") Convênios
 
 
     block content
@@ -52,8 +48,28 @@ html
     footer
       .jumbotron
         .container
-          .col-sm-4
-            h2 contato
+          .row
+            .col-md-6
+              :marked
+                ## Contato
+
+                Solange Galiano Leites Romero
+                <br/>
+                Psicóloga CRP 07/20144
+                <br/>
+                <solangegaliano@yahoo.com.br>
+                <br/>
+                <a href="tel:(51)98125-8431">(51) 98125-8431</a>
+                <br/>
+                Av. Protásio Alves, 1281 - conj 304
+
+            .col-md-6
+              iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6907.698879827954!2d-51.192353!3d-30.041176999999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951978398aaae729%3A0x1b08aef45955918a!2sAv.+Prot%C3%A1sio+Alves%2C+1281+-+Alto+Petr%C3%B3polis%2C+Porto+Alegre+-+RS%2C+Brasil!5e0!3m2!1spt-BR!2sus!4v1483749660399"
+              width="100%" height="300" frameborder="0" style="border:0" allowfullscreen)
+      .container
+        .col-md-6
+          .small
+            <div>Some icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
     //- Optional theme
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous")
