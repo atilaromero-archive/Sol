@@ -6,7 +6,23 @@ mixin img(src)
 block content
   .container
     .col-md-6
-      +img(src="img/IMG_20170624_075718135.jpg")
+      #myCarousel.carousel.slide(data-ride="carousel")
+        ol.carousel-indicators
+          li(data-target="#myCarousel" data-slide-to="0" class="active")
+          li(data-target="#myCarousel" data-slide-to="1")
+          li(data-target="#myCarousel" data-slide-to="2")
+          li(data-target="#myCarousel" data-slide-to="3")
+        .carousel-inner(role="listbox")
+          .item.active
+            +img(src="img/IMG_20170624_075718135.jpg")
+          .item
+            +img(src="img/IMG_20170618_191150716.jpg")
+          .item
+            +img(src="img/IMG_20170618_191203531.jpg")
+          .item
+            +img(src="img/IMG_20170624_075959035.jpg")
+        a.left.carousel-control(href="#myCarousel" role="button" data-slide="prev")
+        a.right.carousel-control(href="#myCarousel" role="button" data-slide="next")
 
     .col-md-6
       :marked
@@ -100,3 +116,4 @@ block content
 
 block myjs
   script jQuery("#apresentacao").addClass("active")
+  script jQuery('.carousel').carousel()
