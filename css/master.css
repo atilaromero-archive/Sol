@@ -194,6 +194,12 @@ body {
   height: auto;
   margin-bottom: 30px;
 }
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-control.right {
+  background-image: none;
+}
 .bg1 {
   background: rgba(255,133,27,0.2);
 }
